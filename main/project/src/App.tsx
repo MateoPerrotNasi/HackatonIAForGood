@@ -1,10 +1,12 @@
+// App.tsx
 import React, { useState } from 'react';
 import { Cpu, Leaf, Zap, TrendingUp, AlertTriangle, Lightbulb } from 'lucide-react';
 import CurrentBadImpact from './components/CurrentBadImpact';
 import CurrentGoodImpact from './components/CurrentGoodImpact';
 import FutureImpact from './components/FutureImpact';
+import CarbonFootprintCalculator from './components/CarbonFootprintCalculator'; // <-- Importez le nouveau composant
 
-type Tab = 'bad' | 'good' | 'future';
+type Tab = 'bad' | 'good' | 'future' | 'carbon'; // Assurez-vous que 'carbon' est ici
 
 function App() {
   const [activeTab, setActiveTab] = useState<Tab>('bad');
@@ -12,7 +14,8 @@ function App() {
   const tabs = [
     { id: 'bad' as Tab, label: 'Défis Actuels', icon: AlertTriangle, color: 'text-red-600' },
     { id: 'good' as Tab, label: 'Impact Positif', icon: Leaf, color: 'text-green-600' },
-    { id: 'future' as Tab, label: 'Perspectives d\'Avenir', icon: Lightbulb, color: 'text-blue-600' }
+    { id: 'future' as Tab, label: 'Perspectives d\'Avenir', icon: Lightbulb, color: 'text-blue-600' },
+    { id: 'carbon' as Tab, label: 'Empreintes Carbonne', icon: Zap, color: 'text-purple-600' }
   ];
 
   return (
@@ -64,11 +67,12 @@ function App() {
         <div className="transition-all duration-300 ease-in-out">
           {activeTab === 'bad' && <CurrentBadImpact />}
           {activeTab === 'good' && <CurrentGoodImpact />}
+          {activeTab === 'carbon' && <CarbonFootprintCalculator />} {/* <-- Utilisez le nouveau composant ici */}
           {activeTab === 'future' && <FutureImpact />}
         </div>
       </main>
 
-      {/* Footer */}
+      {/* Footer de l'application principale - Vous pouvez choisir de garder celui-ci ou de laisser uniquement celui du jeu si vous le préférez */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
