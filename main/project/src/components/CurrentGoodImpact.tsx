@@ -36,21 +36,21 @@ const CurrentGoodImpact = () => {
   const solutions = [
     {
       title: 'Agriculture de Précision',
-      description: 'L\'agriculture assistée par IA réduit l\'utilisation de pesticides de 40%, optimise la consommation d\'eau et augmente les rendements tout en minimisant l\'impact environnemental.',
+      description: 'L\'agriculture assistée par IA a le potentiel de réduire considérablement l\'utilisation de pesticides, avec des études démontrant des diminutions allant jusqu\'à 40% ou plus ; elle optimise également la consommation d\'eau et augmente les rendements, tout en minimisant l\'impact environnemental.',
       image: 'https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg',
       impact: 'Optimisation des Ressources'
     },
     {
       title: 'Transport Intelligent',
-      description: 'Les systèmes de gestion du trafic IA réduisent la consommation de carburant de 25% dans les zones urbaines et optimisent les itinéraires de livraison pour minimiser les émissions.',
+      description: 'Les systèmes de gestion du trafic et d\'optimisation des itinéraires par IA ont le potentiel de réduire la consommation de carburant de 10 à 25% (voire plus dans certains cas) dans les zones urbaines, et minimisent les émissions en optimisant les flux de circulation.',
       image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg',
       impact: 'Réduction des Émissions'
     },
     {
       title: 'Énergie Renouvelable',
-      description: 'Les algorithmes d\'apprentissage automatique prédisent les modèles éoliens et solaires, augmentant l\'efficacité des énergies renouvelables jusqu\'à 20%.',
-      image: 'https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg',
-      impact: 'Énergie Propre'
+      description: 'Grâce aux algorithmes d\'apprentissage automatique, la prédiction des modèles éoliens et solaires est affinée, optimisant ainsi la production d\'énergie renouvelable. Cette amélioration de l\'efficacité peut atteindre 20%, voire davantage, en facilitant une meilleure intégration au réseau et une gestion plus stable de l\'approvisionnement.',
+      image: 'https://images.pexels.com/photos/1090387/pexels-photo-1090387.jpeg',
+      impact: 'Optimisation Énergétique'
     },
     {
       title: 'Efforts de Conservation',
