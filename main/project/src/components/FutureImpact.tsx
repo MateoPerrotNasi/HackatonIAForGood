@@ -64,8 +64,8 @@ const FutureImpact = () => {
   const scenarios = [
     {
       title: 'Scénario Optimiste',
-      description: 'Le développement de l\'IA devient négatif en carbone d\'ici 2030 grâce aux gains d\'efficacité révolutionnaires et à l\'adoption d\'énergies renouvelables.',
-      probability: '35%',
+      description: 'Le développement de l\'IA permet de stopper sa propre augmentation énergétique d\'ici 2040 grâce aux gains d\'efficacité révolutionnaires et à l\'adoption d\'énergies renouvelables.',
+      probability: '',
       color: 'green',
       outcomes: [
         'Impact environnemental net positif',
@@ -76,7 +76,7 @@ const FutureImpact = () => {
     {
       title: 'Scénario Équilibré',
       description: 'Progrès régulier dans la durabilité de l\'IA avec des gains environnementaux modestes tout en gérant la croissance continue des demandes informatiques.',
-      probability: '50%',
+      probability: '',
       color: 'blue',
       outcomes: [
         'Croissance des émissions stabilisée',
@@ -87,7 +87,7 @@ const FutureImpact = () => {
     {
       title: 'Scénario Difficile',
       description: 'La croissance de l\'IA dépasse les efforts de durabilité, nécessitant une intervention urgente et une réglementation pour prévenir les dommages environnementaux.',
-      probability: '15%',
+      probability: '',
       color: 'red',
       outcomes: [
         'Impact environnemental accéléré',
