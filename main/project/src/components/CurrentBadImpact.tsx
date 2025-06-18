@@ -6,14 +6,14 @@ const CurrentBadImpact = () => {
     {
       icon: Zap,
       title: 'Consommation d\'Énergie',
-      value: '3,7%',
+      value: '~2%',
       description: 'de l\'électricité mondiale utilisée par les centres de données',
       color: 'text-red-600'
     },
     {
       icon: Factory,
       title: 'Émissions de Carbone',
-      value: '300M tonnes',
+      value: '180M tonnes',
       description: 'équivalent CO₂ annuellement par l\'entraînement IA',
       color: 'text-orange-600'
     },
@@ -21,13 +21,13 @@ const CurrentBadImpact = () => {
       icon: ThermometerSun,
       title: 'Génération de Chaleur',
       value: '40°C+',
-      description: 'température moyenne de fonctionnement des centres de données',
+      description: 'température maximale de fonctionnement des centres de données',
       color: 'text-yellow-600'
     },
     {
       icon: Database,
       title: 'Stockage de Données',
-      value: '59 ZO',
+      value: '~1,3TO',
       description: 'de données créées annuellement nécessitant un stockage',
       color: 'text-purple-600'
     }
@@ -36,17 +36,17 @@ const CurrentBadImpact = () => {
   const challenges = [
     {
       title: 'Entraînement de Grands Modèles',
-      description: 'L\'entraînement de GPT-3 a consommé autant d\'énergie que 126 foyers danois utilisent en un an. Chaque session d\'entraînement de grands modèles de langage peut émettre des centaines de tonnes de CO₂.',
+      description: 'L\'entraînement de GPT-3 a consommé autant d\'énergie que 300 foyers français utilisent en un an. Chaque session d\'entraînement de grands modèles de langage peut émettre des centaines de tonnes de CO₂.',
       impact: 'Coût Énergétique Élevé'
     },
     {
       title: 'Infrastructure des Centres de Données',
-      description: 'Les charges de travail IA nécessitent du matériel spécialisé comme les GPU qui consomment significativement plus d\'énergie que les serveurs traditionnels, fonctionnant souvent 24h/24.',
+      description: 'Les charges de travail IA nécessitent du matériel spécialisé comme les GPU qui consomment significativement plus d\'énergie que les serveurs traditionnels, fonctionnant 24h/24.',
       impact: 'Consommation Continue'
     },
     {
       title: 'Fabrication de Matériel',
-      description: 'La production de puces IA nécessite des minéraux de terres rares et génère des émissions substantielles avant même que le matériel ne devienne opérationnel.',
+      description: 'La production de puces IA nécessite des minéraux rares et génère des émissions substantielles avant même que le matériel ne devienne opérationnel.',
       impact: 'Carbone Incorporé'
     },
     {
@@ -132,11 +132,11 @@ const CurrentBadImpact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold">626%</div>
+              <div className="text-2xl font-bold">200% à 300%</div>
               <div className="text-sm text-red-100">Croissance énergétique IA projetée d'ici 2030</div>
             </div>
             <div className="bg-white/20 backdrop-blur-sm rounded-xl p-4">
-              <div className="text-2xl font-bold">23G$</div>
+              <div className="text-2xl font-bold">50G$ à 100G$</div>
               <div className="text-sm text-red-100">Coûts énergétiques annuels pour l'IA d'ici 2030</div>
             </div>
           </div>
